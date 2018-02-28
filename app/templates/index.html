@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Space Flora</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/stylesheet.css') }}" >
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header_container">
+            <p class="title">S p a c e   F l o r a</p>
+            <p class="sub_title">The current Star Date is {{ time }}</p>
+        </div>
+        <div class="form_container">
+            <p class="sub_title">Input some shiz</p>
+        
+            <form action="" method="post">
+                <p>
+                    {{ form.username.label }}<br>
+                    {{ form.username(class="input_style") }}
+                </p>
+                <p>
+                    {{ form.pin.label }}<br>
+                    {{ form.pin(class="input_style") }}
+                </p>
+                {{ form.time }}
+                <p>{{ form.submit() }}</p>
+                
+            </form>
+            
+        </div>
+        
+             
+<!--        <p>This is where things will go2222222</p>-->
+<!--        <h1>Your name is {{ user.username }}</h1>-->
+        
+        
+        <div class="bottom_bar">
+            <p class="sub_title">This is where some things will go</p>
+        </div>
+    </body>
+</html>
