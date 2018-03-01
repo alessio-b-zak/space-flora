@@ -13,28 +13,25 @@
         </div>
         <div class="form_container">
             <p class="sub_title">Input some shiz</p>
-        
+
             <form action="" method="post">
-                <p>
-                    {{ form.username.label }}<br>
-                    {{ form.username(class="input_style") }}
-                </p>
-                <p>
-                    {{ form.pin.label }}<br>
-                    {{ form.pin(class="input_style") }}
                 </p>
                 {{ form.time }}
                 <p>{{ form.submit() }}</p>
-                
+
             </form>
-            
+
         </div>
-        
-             
-<!--        <p>This is where things will go2222222</p>-->
-<!--        <h1>Your name is {{ user.username }}</h1>-->
-        
-        
+
+        <a class="trigger" href="/trigger">Click me for a good time ;)</a>
+
+        <div class="time_container">
+            {% for time in times %}
+            <p class="time_text">Watering at {{ time.time }}</p>
+            {% endfor %}
+        </div>
+
+
         <div class="bottom_bar">
             <p class="sub_title">This is where some things will go</p>
         </div>
